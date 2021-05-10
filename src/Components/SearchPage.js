@@ -8,7 +8,7 @@ function SearchPage(props) {
 
     const fetchData = () => {
         let inp = searchQuery.split(" ").join("+");
-        const APICall = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${inp}&type=movie`
+        const APICall = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${inp}&type=movie`
         console.log(APICall)
         fetch(APICall)
             .then(response => response.json())
@@ -52,7 +52,7 @@ function SearchPage(props) {
                 );
             })
             }
-            {movieList.length === 0 && <h1>No Results</h1>}
+            {movieList.length === 0 && <h3>No Results</h3>}
 
             <h1>Your Nominations</h1>
             {nominations && nominations.map((movie) => {
