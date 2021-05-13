@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+#remove-button {
+  background-color: #f44336; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 2%;
+}
+
+button:hover:enabled {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#nominate-button:enabled {
+  background-color: #4CAF50;; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 2%;
+}
+
+button:disabled {
+  background-color: #555555; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 2%;
+}
+
+.card {
+  text-align: center;
+  display: inline-block;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+hr {
+  width: 100%;
+}
+
+.textstyle {
+  background-color: #0074D9; /* Changing background color */
+  font-weight: bold; /* Making font bold */
+  border-radius: 20px; /* Making border radius */
+  width: auto; /* Making auto-sizable width */
+  height: auto; /* Making auto-sizable height */
+  padding: 5px 30px 5px 30px; /* Making space around letters */
+  font-size: 18px; /* Changing font size */
+  color: white;
+}
