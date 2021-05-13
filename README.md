@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Time-To-Nominate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my Shopify Front-End Engineering Intern project submission (Fall 2021): a webpage which searches [OMDB](http://www.omdbapi.com/) for movies, and allows the user to save their favourite films they feel should be up for nomination (upcoming Shoppies Awards!)
 
-## Available Scripts
+**Deployed On:** http://time-to-nominate.herokuapp.com/
 
-In the project directory, you can run:
+*Note: The site may take some time to load due to Heroku free hosting*
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. [Quick Start](#quick-start)
+2. [Demo](#demo)
+3. [Tech Stack](#tech-stack)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Quick Start
 
-### `npm test`
+There are two ways you can visit and interact with the website.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Option 1
+Visit the [deployed site](http://time-to-nominate.herokuapp.com/) (as mentioned above)
 
-### `npm run build`
+### Option 2
+Run the site locally (on your local machine)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository: `git clone https://github.com/aashrit-luthra/Time-To-Nominate.git`
+2. In your Terminal, `cd` into this project folder
+3. Type and enter `npm install` (this installs the required dependencies)
+4. To run the project, type and enter `npm run start` (this will open the site running on your local machine automatically)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You will first be faced with a clean UI, showing you:
+* your nomination count on the top of the page
+* a search bar to search for your favourite movies
+* an area to show the search results
 
-### `npm run eject`
+![](images/Landing.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You can enter any search query in the search bar, which will then display the movie results (title, year, and poster) alongside a intuitive green button to nominate that movie
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](images/Search%20Sample.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Clicking the green 'Nominate' button will add the movie to your nomination list. 
+*Observe how the button disables and turns grey once it is nominated*
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![](images/Nominated%20Few.png)
 
-## Learn More
+Once you nominate 5 movies (the maximum number), you will be alerted and informed:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![](images/Alert.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*Observe that all movie 'Nominate' buttons are disabled and greyed due to the limit of nominations being reached* You can also remove nominations by clicking the red 'Remove' button.
 
-### Code Splitting
+![](images/5%20Nominated.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Tech Stack
 
-### Analyzing the Bundle Size
+For this project, I leveraged:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* JavaScript
+* React
+* Material UI
+* HTML
+* CSS
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
